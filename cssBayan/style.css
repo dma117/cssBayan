@@ -1,0 +1,26 @@
+.title {
+    text-align: center;
+}
+
+.bayan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 1080px;
+}
+
+.bayanElement {
+    width: fit-content;
+}
+
+.elementContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.elementImage {
+    width: 500px;
+}
