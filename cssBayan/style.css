@@ -39,7 +39,9 @@ body, hr {
     padding: 20px 0;
 }
 
-.elementIcon {
+.elementIcon, 
+.elementIcon1,
+.elementIcon2 {
     margin: auto 0;
 }
 
@@ -51,7 +53,7 @@ body, hr {
     transition: opacity 0.3s, width 0.5s;
 }
 
-input:checked + .elementImage {
+input:checked + label + .elementImage {
     opacity: 1;
     margin: 0 auto 40px;
     width: 70%;
@@ -59,6 +61,15 @@ input:checked + .elementImage {
     transition: opacity 0.3s, width 0.5s;
 }
 
-.title, .elementText {
-    margin: 0;
+.elementIcon1 {
+    display: none;
 }
+
+input:checked + label > div > .elementIcon2 {
+    display: none;
+}
+
+input:checked + label > div > .elementIcon1 {
+    display: initial;
+}
+
