@@ -1,4 +1,9 @@
-body {
+html {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body, hr {
     margin: 0;
 }
 
@@ -13,13 +18,17 @@ body {
     max-width: 700px;
 }
 
+.bayanHeader {
+    padding: 20px 0;
+}
+
 .bayanLayout:hover, 
 .elementContainer:hover, 
 .elementIcon:hover {
     cursor: pointer;
 }
 
-#elementClickControl {
+.clickableRow {
     display: none;
 }
 
@@ -34,17 +43,17 @@ body {
     margin: auto 0;
 }
 
-#elementClickControl:checked + label + .elementImage {
+.elementImage {
     opacity: 0;
     width: 0%;
-    margin-bottom: 0;
+    display: block;
+    margin: 0 auto;
     transition: opacity 0.3s, width 0.5s;
 }
 
-#elementClickControl:not(checked) + label + .elementImage {
+input:checked + .elementImage {
     opacity: 1;
     margin: 0 auto 40px;
-    display: block;
     width: 70%;
     height: auto;
     transition: opacity 0.3s, width 0.5s;
