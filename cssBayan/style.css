@@ -13,6 +13,16 @@ body {
     max-width: 700px;
 }
 
+.bayanLayout:hover, 
+.elementContainer:hover, 
+.elementIcon:hover {
+    cursor: pointer;
+}
+
+#elementClickControl {
+    display: none;
+}
+
 .elementContainer {
     display: flex;
     flex-direction: row;
@@ -20,12 +30,26 @@ body {
     padding: 20px 0;
 }
 
-.title {
-    margin: 0;
+.elementIcon {
+    margin: auto 0;
 }
 
-.elementImage {
-    max-width: 500px;
+#elementClickControl:checked + label + .elementImage {
+    opacity: 0;
+    width: 0%;
+    margin-bottom: 0;
+    transition: opacity 0.3s, width 0.5s;
+}
+
+#elementClickControl:not(checked) + label + .elementImage {
+    opacity: 1;
+    margin: 0 auto 40px;
     display: block;
-    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    transition: opacity 0.3s, width 0.5s;
+}
+
+.title, .elementText {
+    margin: 0;
 }
