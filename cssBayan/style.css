@@ -1,26 +1,31 @@
-.title {
-    text-align: center;
+body {
+    margin: 0;
 }
 
-.bayan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.pageContainer {
+    width: 1000px;
     margin: 0 auto;
-    max-width: 1920px;
-    height: 1080px;
+    background-color: antiquewhite;
 }
 
-.bayanElement {
-    width: fit-content;
+.bayanLayout {
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .elementContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 20px 0;
+}
+
+.title {
+    margin: 0;
 }
 
 .elementImage {
-    width: 500px;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
 }
